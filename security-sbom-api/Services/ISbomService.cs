@@ -4,5 +4,5 @@ namespace security.sbom.Services;
 
 public interface ISbomService
 {
-    Task SaveSpbxAsync(string type, SPDX22Document spbxDocument);
+    Task SaveSpbxAsync(SPDX22Document spbxDocument);
 }

@@ -45,11 +45,11 @@ app.UseAuthentication()
     .UseHttpsRedirection();
 
 app.MapPost("/spbx",
-        ([FromRoute]string type, [FromBody]SPDX22Document spbxDocument, ISbomService sbomService) =>
+        ([FromBody]SPDX22Document spbxDocument, ISbomService sbomService) =>
         {
             try
             {
-                sbomService.SaveSpbxAsync(type, spbxDocument);
+                sbomService.SaveSpbxAsync( spbxDocument);
             }
             catch (Exception e)
             {

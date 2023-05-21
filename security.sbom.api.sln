@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "security.sbom.api", "security-sbom-api\security.sbom.api.csproj", "{D3C3FDD2-ADBD-49D6-AFF2-82B6330000FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "security.sbom.api", "security-sbom-api\security.sbom.api.csproj", "{D3C3FDD2-ADBD-49D6-AFF2-82B6330000FC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{519AD158-0A11-4066-A9BF-717E75E71125}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "security.sbom.api.unittests", "tests\security.sbom.api.unittests\security.sbom.api.unittests.csproj", "{EE026172-8207-4805-9625-A17B3CAD49FD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +19,16 @@ Global
 		{D3C3FDD2-ADBD-49D6-AFF2-82B6330000FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C3FDD2-ADBD-49D6-AFF2-82B6330000FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C3FDD2-ADBD-49D6-AFF2-82B6330000FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE026172-8207-4805-9625-A17B3CAD49FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE026172-8207-4805-9625-A17B3CAD49FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE026172-8207-4805-9625-A17B3CAD49FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE026172-8207-4805-9625-A17B3CAD49FD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EE026172-8207-4805-9625-A17B3CAD49FD} = {519AD158-0A11-4066-A9BF-717E75E71125}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {10B40DC7-6659-419F-87EA-B765C6B62987}

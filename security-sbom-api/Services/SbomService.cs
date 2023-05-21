@@ -14,7 +14,7 @@ public class SbomService : ISbomService
         _logger = logger;
     }
 
-    public async Task SaveSpbxAsync(string type, SPDX22Document document)
+    public async Task SaveSpbxAsync(SPDX22Document document)
     {
         _logger.LogInformation($"Processing for dependency: {document.DocumentName}");
 
