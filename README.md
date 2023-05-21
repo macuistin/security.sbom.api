@@ -2,6 +2,10 @@
 
 This is a minimal API for managing Software Bill of Materials (SBOM) data. It uses the ExRam.Gremlinq library to interact with a Cosmos DB graph database.
 
+SBOM SPBX files can be generated using the free microsoft SBOM tool:
+* CLI: https://github.com/microsoft/sbom-tool/blob/main/docs/sbom-tool-cli-reference.md
+* ADO Pipeline: https://github.com/microsoft/sbom-tool/blob/main/docs/setting-up-ado-pipelines.md
+
 ## Setup
 
 This API is built with .NET 6.0 and uses the new minimal API feature. To run the API, you'll need to have .NET 6.0 installed on your machine.
